@@ -1,0 +1,116 @@
+:root {
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color: #333;
+    --primary-color:#F6452E;
+    --border-color: #dbdbdb;
+    --navbar-height: 34px;
+    --header-height: 120px;
+    --header-with-search: calc(var(--header-height) - var(--navbar-height));
+}
+* {
+    padding: 0;
+    
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal{
+    position: fixed;    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: FadeIn linear 0.1s;
+}
+.modal__overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0, 0, 0.4);
+    
+}
+
+.modal__body{
+    --growth-from:0.6;
+    --growth-to:1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    animation: FadeScale linear 0.1s;
+}
+
+/* button style  */
+.btn {
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--text-color);
+    
+    
+    
+}
+
+.btn.btn_back:hover{
+    background-color: rgba(0,0, 0, 0.1);
+}
+.btn.btn--primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    
+}
+.btn--disable{
+    color: #ccc;
+    cursor: default;
+    background-color: #999;
+}
+
+
+@keyframes FadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes FadeScale {
+    from {
+        
+        opacity: 0;
+        transform: scale(var(--growth-from));
+    }
+    to {
+        opacity: 1;
+        transform: scale(var(--growth-to));
+    }
+
+}
