@@ -25,7 +25,7 @@
 
                 <nav class="header__navbar">
                     <ul class="header__navbar-list ">
-                        <li class="header__navbar-items header__navbar-items-rehide ">
+                        <li class="header__navbar-items header__navbar-items-rehide  ">
                             Vào Cửa Hàng Trên Ứng Dụng TickID
                             <div class="header__navbar-qr">
                                 <img src="./assets/img/QR-code.png" alt="" class="header__navbar-qr-img">
@@ -39,10 +39,9 @@
                             </div>
                         </li>
                         <!-- header qr -->
-
-                        <span class="khoangtrong"></span>
+                        <div class="khoangtrong"></div>
+                        
                         <li class="header__navbar-items no-hover "> Kết Nối
-
                         </li>
 
 
@@ -132,16 +131,37 @@
                                 <i class="header__navbar-icon fa-regular fa-circle-question"></i>
                                 Trợ Giúp</a>
                         </li>
-                        <li class="header__navbar-items header__navbar-items--strong">Đăng Kí </li>
-                        <span class="khoangtrong"></span>
+                        <!-- <li class="header__navbar-items header__navbar-items--strong">Đăng Kí </li>
+                        <div class="khoangtrong"></div>
                         <li class="header__navbar-items header__navbar-items--strong">Đăng Nhập</li>
+                         -->
+                        <li class="header__navbar-items header__navbar-items-user">
+                            <img src="./assets/img/user-avatar/361560315_919176369776697_356968465311820159_n.jpg" alt="" class="header__navbar-items-user-img">
+                            <span class="header__navbar-user-name">Nguyễn Minh Quân</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-menu-item">
+                                    <a href=""> Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-menu-item">
+                                    <a href=""> Địa Chỉ</a>
+                                </li>
+                                <li class="header__navbar-user-menu-item">
+                                    <a href=""> Đơn Mua </a>
+                                </li>
+                                <li class="header__navbar-user-menu-item header__navbar-user-menu--separate">
+                                    <a href=""> Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        
+                        </li>
                     </ul>
 
                 </nav>
                 <!-- header with seach -->
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <svg viewBox="0 0 192 65"
+                        <a href="/" class="header__logo-link">
+                            <svg viewBox="0 0 192 65"
                             class="header__logo-img">
                             <g fill-rule="evenodd">
                                 <path fill="#fff"
@@ -149,6 +169,7 @@
                                 </path>
                             </g>
                         </svg>
+                        </a>
                     </div>
 
                     <div class="header__search">
@@ -283,8 +304,40 @@
         </div>
 
         <!-- container -->
-        <div class="container">
+        <div class="app__container">
+           <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <div class="category">
+                            <h3 class="category-heading">
+                                <i class="category-heading-icon fa-solid fa-list-ul"></i>
+                                Danh Mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-items category-items-active">
+                                    <a href="#" class="category-items__link">Sản Phẩm</a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="#" class="category-items__link">Sắc Đẹp</a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="#" class="category-items__link">Sức Khỏe</a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="#" class="category-items__link">Đồng Hồ</a>
+                                </li>
 
+                                <li class="category-items">
+                                    <a href="#" class="category-items__link">Nhà Cửa & Đời Sống</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-10">
+
+                    </div>
+                </div>
+           </div>
         </div>
 
 
